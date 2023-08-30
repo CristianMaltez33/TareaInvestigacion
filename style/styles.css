@@ -136,7 +136,12 @@
     font-size: 18px;
     line-height: 2.0;
     text-align: justify;
+    height: 100%;
     width: 60%;
     margin-left: 10px;
     /* margin-right: 1.10cm; */
+    border: 2px solid #ccc; /* Borde de 2px de ancho y color gris claro (#ccc) */
+    border-radius: 10px; /* Esquinas redondeadas de 10px de radio */
+    background-color: #f5f5f5; /* Color de fondo gris claro */
+    padding: 10px; 
 }
