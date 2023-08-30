@@ -1,0 +1,142 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    /*grid-template-rows: auto auto auto;
+    justify-items: center; /* Centra horizontalmente los elementos */
+    align-items: center; 
+}
+
+.portada{
+    text-align: center;
+}
+
+.portadaUES{
+    margin-top: 20px;
+    width: 290px;
+    height: 350px;
+}
+
+.tutiloProyecto{
+    width: 65%;
+    font-size: 35px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.indice {
+    margin-top: 70px;
+    margin-left: 22%;
+    font-size: 22px;
+}
+
+.sub-temas{
+    list-style: none;
+}
+
+.Introduccion{
+    /* margin-top: 80px;
+    margin-left: 15%; */
+
+   margin-top: 85px;
+    font-size: 17px;
+    line-height: 2.0;
+    text-align: justify;
+}
+
+.objetivosEstudios{
+    margin-top: 20px;
+}
+
+
+.desarrollo{
+    margin-top: 26px;
+}
+
+.herramientas{
+    margin-top: 45px;
+}
+
+.git-img{
+    
+    width: 30%;
+    transition: transform 0.5s; 
+}
+
+
+/* Estilos generales */
+.txt-center{
+    text-align: center;
+}
+
+.bloques{
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    margin-left: 2.54cm;
+    margin-right: 2.54cm;
+}
+
+.listas{
+    list-style: square;
+}
+
+.centred{
+    text-align: center;
+}
+
+.desarrollo-img {
+    display: flex;
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    margin-bottom: 30px;
+  }
+  
+  .git-img {
+    position: relative;
+    display: inline-block;
+    width: 40%; /* Ajusta el ancho de la tarjeta según tus necesidades */
+    height: auto;
+  }
+  
+  .git-img img {
+    margin-top: auto;
+    left: 0;
+    width: 100%; /* Ajusta el tamaño de la imagen al 100% del contenedor */
+    height: 100%; /* Ajusta la altura de la imagen automáticamente */
+    opacity: 1; /* Establece la opacidad inicial de la imagen */
+    transition: opacity 0.5s; /* Agrega una transición suave */
+  }
+  
+  .git-img .texto {
+    position: absolute;
+    margin-top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo del texto */
+    color: #fff; /* Color del texto */
+    font-size: 18px; /* Tamaño de fuente del texto */
+    opacity: 0; /* Establece la opacidad inicial del texto */
+    transition: opacity 0.5s; /* Agrega una transición suave */
+    pointer-events: none; /* Evita que el texto sea clickeable */
+    display: flex;
+    flex-direction: column; /* Cambio a dirección de columna para centrar contenido verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    text-align: center; /* Alinea el texto en el centro */
+  }
+  
+  .git-img:hover img {
+    opacity: 0; /* Oculta la imagen al pasar el cursor */
+  }
+  
+  .git-img:hover .texto {
+    opacity: 1; /* Muestra el texto al pasar el cursor */
+  }
+
+  .bloques-herramientas{
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    width: 60%;
+    margin-left: 10px;
+    /* margin-right: 1.10cm; */
+}
