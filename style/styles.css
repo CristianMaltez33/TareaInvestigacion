@@ -85,7 +85,7 @@
 
 .desarrollo-img {
     display: flex;
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    align-items: flex-start;
     margin-bottom: 30px;
   }
   
@@ -145,3 +145,16 @@
     background-color: #f5f5f5; /* Color de fondo gris claro */
     padding: 10px; 
 }
+
+.bordes { 
+    height: 100%; 
+    border: 2px solid #ccc; /* Borde de 2px de ancho y color gris claro (#ccc) */ 
+    border-radius: 10px; /* Esquinas redondeadas de 10px de radio */ 
+    background-color: #f5f5f5; /* Color de fondo gris claro */ 
+    padding: 10px; 
+    box-sizing: border-box; /* El tamaño total incluye el ancho del borde */ 
+} 
+
+ul.CVS{
+    height: 180px;
+  }
