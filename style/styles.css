@@ -1,7 +1,89 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255,253,65);
+background: radial-gradient(circle, rgba(255,253,65,1) 0%, rgba(201,2,43,1) 100%);
+font-family: 'Times New Roman', Times, serif;
+}
+
+/*menu*/
+
+.topnav{  
+		
+    list-style-type: none;
+    overflow: hidden;
+    position: -webkit-sticky;/*safari*/
+    position: sticky;
+    top: 0;
+     z-index: 9999;
+}
+
+ul.topnav{
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+background-color: #000000;
+position: sticky;	
+}
+
+ul.topnav li{
+float:left;
+position: sticky;
+}
+
+ul.topnav li a{
+display:block;
+color: white;
+text-align: center;
+padding: 24px 76px;
+text-decoration: none;
+font-size: 20px;
+position: sticky;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #151515;}
+
+ul.topnav li a.active {background-color: #000000;}
+
+ul.topnav li a.right {float: right;}
+
 .container{
-    display: grid;
-    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 1750px;
+    margin: auto;
+    padding: 100px;	
+    background: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+	text-align: justify;
+    border-radius: 30px;
+    /*display: grid;
+    grid-template-columns: 1fr;*/
     align-items: center; 
+}
+.card-img-top{
+width: 100%;
+max-width: 400px;
+margin: auto;
+padding: auto;
+margin-top: 15px;
+margin-bottom: 15px;
+align-items:self-start;
+box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card-img-top:hover{
+    filter:brightness(0.9);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3%);
 }
 
 .portada{
@@ -21,9 +103,9 @@
     margin-top: 35px;
 }
 .indice {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 22%;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .sub-temas{
@@ -56,10 +138,25 @@
     transition: transform 0.5s; 
 }
 
+/*cards*/
+.row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 /* Estilos generales */
 .txt-center{
     text-align: center;
+}
+
+.txt-center-2{
+    text-align: left;
+}
+
+.card-title{
+    text-align:justify ;
+    line-height:2.0 ;
+    margin-left: 2.54cm;
 }
 
 .bloques{
@@ -91,42 +188,6 @@
     height: auto;
 }
 
-.git-img img {
-    margin-top: auto;
-    left: 0;
-    width: 100%; 
-    height: 100%; 
-    opacity: 1;
-    transition: opacity 0.5s; 
-}
-
-.git-img .texto {
-    position: absolute;
-    margin-top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); 
-    color: #fff; 
-    font-size: 18px; 
-    opacity: 0; 
-    transition: opacity 0.5s; 
-    pointer-events: none; 
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: center; 
-    text-align: center; 
-}
-
-.git-img:hover img {
-    opacity: 0; 
-}
-
-.git-img:hover .texto {
-    opacity: 1;
-}
-
 .bloques-herramientas{
     font-size: 18px;
     line-height: 2.0;
@@ -152,3 +213,27 @@
 ul.CVS{
     height: 180px;
 }
+
+/*.pieza-digital{
+    position: relative;
+    display: inline-block;
+    width: 80%; 
+    height: auto;
+}
+
+.pieza-img{
+    width: 7%;
+}
+
+.bloques-herramientas{
+    font-size: 18px;
+    line-height: 2.0;
+    text-align: justify;
+    height: 100%;
+    width: 60%;
+    margin-left: 10px;
+    border: 2px solid #ccc; 
+    border-radius: 10px; 
+    background-color: #f5f5f5; 
+    padding: 10px; 
+}*/
